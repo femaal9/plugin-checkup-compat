@@ -3,100 +3,705 @@
   "updated": "2026-11-20",
   "about": "Archivio di compatibilità di Plugin Checkup. Stati: ok, update (serve almeno la versione 'min'), issue (problemi noti), wait (il produttore sta testando o consiglia di aspettare), no (non supportato), unknown (nessuna dichiarazione). Ogni voce riporta la fonte e la data dell'ultimo controllo.",
   "macos": [
-    {"major": "26", "name": "Tahoe", "latest": "26.7.3", "released": "2026-11-09", "apple_silicon_only": false, "rosetta": "yes",
-     "note": "Tahoe riceve solo aggiornamenti di sicurezza. 26.7.1 ha corretto una falla di CoreGraphics già sfruttata.",
-     "source": "https://9to5mac.com/2026/09/28/apple-releases-macos-27-0-1-golden-gate-plus-macos-tahoe-26-7-1-and-macos-sequoia-15-8-1/"},
-    {"major": "27", "name": "Golden Gate", "latest": "27.2.1", "released": "2026-11-09", "apple_silicon_only": true, "rosetta": "last",
-     "note": "Solo Mac Apple Silicon. È l'ultimo macOS con Rosetta 2, che dopo l'aggiornamento non viene reinstallato in automatico.",
-     "source": "https://www.macrumors.com/2026/06/10/macos-golden-gate-last-to-support-intel-apps/"}
+    {
+      "major": "26",
+      "name": "Tahoe",
+      "latest": "26.7.3",
+      "released": "2026-11-09",
+      "apple_silicon_only": false,
+      "rosetta": "yes",
+      "note": "Tahoe riceve solo aggiornamenti di sicurezza. 26.7.1 ha corretto una falla di CoreGraphics già sfruttata.",
+      "source": "https://9to5mac.com/2026/09/28/apple-releases-macos-27-0-1-golden-gate-plus-macos-tahoe-26-7-1-and-macos-sequoia-15-8-1/"
+    },
+    {
+      "major": "27",
+      "name": "Golden Gate",
+      "latest": "27.2.1",
+      "released": "2026-11-09",
+      "apple_silicon_only": true,
+      "rosetta": "last",
+      "note": "Solo Mac Apple Silicon. È l'ultimo macOS con Rosetta 2, che dopo l'aggiornamento non viene reinstallato in automatico.",
+      "source": "https://www.macrumors.com/2026/06/10/macos-golden-gate-last-to-support-intel-apps/"
+    }
   ],
   "apps": [
-    {"id": "logic", "name": "Logic Pro", "app": "^Logic Pro",
-     "os": {"27": {"state": "update", "min": "13.0", "note": "Apple supporta Logic Pro su Golden Gate dal lancio. Versione minima non dichiarata: è garantita solo la versione attuale (13).", "source": "https://www.production-expert.com/production-expert-1/macos-golden-gate-compatibility-the-ultimate-pro-audio-guide", "checked": "2026-11-20"}}},
-    {"id": "ableton", "name": "Ableton Live", "app": "^Ableton Live 1[12]",
-     "os": {"27": {"state": "ok", "note": "Live 11 e Live 12 sono supportati su macOS 27.", "source": "https://help.ableton.com/hc/en-us/articles/115001261150-Mac-Compatibility-Guide-for-Ableton-Live", "checked": "2026-09-26"}}},
-    {"id": "protools", "name": "Pro Tools", "app": "^Pro Tools",
-     "os": {"27": {"state": "no", "note": "Avid non supporta ancora Pro Tools su macOS 27: resta sui sistemi qualificati.", "source": "https://kb.avid.com/pkb/articles/en_US/Knowledge/macOS-silicon-support", "checked": "2026-10-29"}}},
-    {"id": "cubase", "name": "Cubase / Nuendo", "app": "^(Cubase|Nuendo) 15",
-     "os": {"27": {"state": "update", "min": "15.0.40", "note": "Steinberg indica la versione minima per macOS 27.", "source": "https://helpcenter.steinberg.de/hc/en-us/articles/38919570456594", "checked": "2026-09-26"}}},
-    {"id": "studiopro", "name": "Studio Pro", "app": "^(Fender )?Studio Pro",
-     "os": {"27": {"state": "update", "min": "8.1.2", "note": "Fender indica la versione minima per macOS 27.", "source": "https://support.presonus.com/hc/en-us/articles/49220209507213-macOS-27-Golden-Gate-iOS-27-iPadOS-27-Compatibility-with-Fender-products", "checked": "2026-10-29"}}},
-    {"id": "bitwig", "name": "Bitwig Studio", "app": "^Bitwig",
-     "os": {"27": {"state": "wait", "note": "Bitwig sta ancora testando e consiglia di aspettare.", "source": "https://www.bitwig.com/support/technical_support/are-bitwig-studio-and-bitwig-connect-412-compatible-with-macos-golden-gate-106/", "checked": "2026-09-29"}}},
-    {"id": "ilok", "name": "iLok License Manager", "app": "^iLok License Manager",
-     "os": {"27": {"state": "update", "min": "6.0.2", "note": "Il supporto a macOS 27 è arrivato con la 6.0.2. Fonte non ufficiale: verificalo su ilok.com.", "source": "https://mac.softpedia.com/get/Utilities/iLok-License-Manager.shtml", "checked": "2026-11-20"}}}
+    {
+      "id": "logic",
+      "name": "Logic Pro",
+      "app": "^Logic Pro",
+      "os": {
+        "27": {
+          "state": "update",
+          "min": "13.0",
+          "note": "Apple supporta Logic Pro su Golden Gate dal lancio. Versione minima non dichiarata: è garantita solo la versione attuale (13).",
+          "source": "https://www.production-expert.com/production-expert-1/macos-golden-gate-compatibility-the-ultimate-pro-audio-guide",
+          "checked": "2026-11-20"
+        }
+      }
+    },
+    {
+      "id": "ableton",
+      "name": "Ableton Live",
+      "app": "^Ableton Live 1[12]",
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Live 11 e Live 12 sono supportati su macOS 27.",
+          "source": "https://help.ableton.com/hc/en-us/articles/115001261150-Mac-Compatibility-Guide-for-Ableton-Live",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "protools",
+      "name": "Pro Tools",
+      "app": "^Pro Tools",
+      "os": {
+        "27": {
+          "state": "no",
+          "note": "Avid non supporta ancora Pro Tools su macOS 27: resta sui sistemi qualificati.",
+          "source": "https://kb.avid.com/pkb/articles/en_US/Knowledge/macOS-silicon-support",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "cubase",
+      "name": "Cubase / Nuendo",
+      "app": "^(Cubase|Nuendo) 15",
+      "os": {
+        "27": {
+          "state": "update",
+          "min": "15.0.40",
+          "note": "Steinberg indica la versione minima per macOS 27.",
+          "source": "https://helpcenter.steinberg.de/hc/en-us/articles/38919570456594",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "studiopro",
+      "name": "Studio Pro",
+      "app": "^(Fender )?Studio Pro",
+      "os": {
+        "27": {
+          "state": "update",
+          "min": "8.1.2",
+          "note": "Fender indica la versione minima per macOS 27.",
+          "source": "https://support.presonus.com/hc/en-us/articles/49220209507213-macOS-27-Golden-Gate-iOS-27-iPadOS-27-Compatibility-with-Fender-products",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "bitwig",
+      "name": "Bitwig Studio",
+      "app": "^Bitwig",
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Bitwig sta ancora testando e consiglia di aspettare.",
+          "source": "https://www.bitwig.com/support/technical_support/are-bitwig-studio-and-bitwig-connect-412-compatible-with-macos-golden-gate-106/",
+          "checked": "2026-09-29"
+        }
+      }
+    },
+    {
+      "id": "ilok",
+      "name": "iLok License Manager",
+      "app": "^iLok License Manager",
+      "os": {
+        "27": {
+          "state": "update",
+          "min": "6.0.2",
+          "note": "Il supporto a macOS 27 è arrivato con la 6.0.2. Fonte non ufficiale: verificalo su ilok.com.",
+          "source": "https://mac.softpedia.com/get/Utilities/iLok-License-Manager.shtml",
+          "checked": "2026-11-20"
+        }
+      }
+    }
   ],
   "vendors": [
-    {"id": "celemony", "vendor": "Celemony", "keys": ["celemony"],
-     "os": {"27": {"state": "ok", "note": "Celemony ha testato Melodyne su macOS 27 solo con Ableton Live 12.4 e Digital Performer 12.", "source": "https://www.celemony.com/en/melodyne/editions-and-technical-matters", "checked": "2026-11-20",
-                   "per_app": [{"app": "^Logic Pro", "state": "issue", "note": "Logic su macOS 27 non è tra le configurazioni testate da Celemony. In Logic nativo su Apple Silicon l'ARA non è pienamente supportato: Celemony consiglia di aprire Logic con Rosetta."}]}}},
-    {"id": "arturia", "vendor": "Arturia", "keys": ["arturia"],
-     "os": {"27": {"state": "ok", "note": "Compatibilità validata per tutto il software e l'hardware.", "source": "https://support.arturia.com/hc/en-us/articles/30213186440348-Compatibility-macOS-27-Golden-Gate", "checked": "2026-10-29"}}},
-    {"id": "spectrasonics", "vendor": "Spectrasonics", "keys": ["spectrasonics"],
-     "os": {"27": {"state": "ok", "note": "Omnisphere 3, Keyscape, Trilian e Stylus RMX sono supportati nelle ultime versioni.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-29"}}},
-    {"id": "spectrasonics-omni2", "vendor": "Spectrasonics", "keys": ["spectrasonics"], "products": ["omnisphere 2"],
-     "os": {"27": {"state": "no", "note": "Omnisphere 2 è supportato solo fino a macOS 26 Tahoe.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-29"}}},
-    {"id": "sonnox", "vendor": "Sonnox", "keys": ["sonnox"],
-     "os": {"27": {"state": "ok", "note": "Le versioni G5 attuali sono compatibili.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-09-26"}}},
-    {"id": "slate", "vendor": "Slate Digital", "keys": ["slatedigital", "eiosis"],
-     "os": {"27": {"state": "ok", "note": "Nessun problema trovato sui plugin Slate ed Eiosis. La validazione dei plugin SSL e Harrison è ancora in corso.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-29"}}},
-    {"id": "eventide", "vendor": "Eventide", "keys": ["eventide"],
-     "os": {"27": {"state": "ok", "note": "Tutti i plugin Eventide sono compatibili.", "source": "https://www.eventideaudio.com/forums/topic/latest-os-compatibility-info/", "checked": "2026-10-29"}}},
-    {"id": "newfangled", "vendor": "Newfangled Audio", "keys": ["newfangledaudio"],
-     "os": {"27": {"state": "wait", "note": "Durante i test sono emersi problemi: aspetta la conferma.", "source": "https://www.eventideaudio.com/forums/topic/latest-os-compatibility-info/", "checked": "2026-10-29"}}},
-    {"id": "uhe", "vendor": "u-he", "keys": ["uhe"],
-     "os": {"27": {"state": "ok", "note": "Le versioni attuali supportano Golden Gate.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-29"}}},
-    {"id": "kazrog", "vendor": "Kazrog", "keys": ["kazrog"],
-     "os": {"27": {"state": "ok", "note": "Tutta la gamma è testata. Aggiorna dal Plugin Manager.", "source": "https://kazrog.com/blogs/news/macos-27-compatibility-statement", "checked": "2026-09-16"}}},
-    {"id": "gforce", "vendor": "GForce", "keys": ["gforce", "gforcesoftware"],
-     "os": {"27": {"state": "ok", "note": "Nessun problema con le versioni attuali. Le versioni legacy possono non funzionare.", "source": "https://www.gforcesoftware.com/help/technical-support/", "checked": "2026-09-14"}}},
-    {"id": "2bplayed", "vendor": "2B Played Music", "keys": ["2bplayedmusic", "2bplayed"],
-     "os": {"27": {"state": "ok", "note": "Le versioni attuali sono supportate su Apple Silicon.", "source": "https://2bplayed.com/support/", "checked": "2026-09-16"}}},
-    {"id": "universalaudio", "vendor": "Universal Audio", "keys": ["universalaudio", "universalaudiouadx", "uaudio"],
-     "os": {"27": {"state": "wait", "note": "UA sta ancora testando macOS 27 e segnala piccoli problemi grafici nei plugin UAD Native.", "source": "https://www.macobserver.com/?p=484819", "checked": "2026-11-20"}}},
-    {"id": "izotope", "vendor": "iZotope", "keys": ["izotope"],
-     "os": {"27": {"state": "wait", "note": "Non ancora supportato ufficialmente: valutazione in corso.", "source": "https://support.izotope.com/hc/en-us/articles/49050744155021-macOS-27-Golden-Gate-Compatibility-Statement", "checked": "2026-10-05"}}},
-    {"id": "korg", "vendor": "KORG", "keys": ["korg"],
-     "os": {"27": {"state": "wait", "note": "KORG sta testando tutti i prodotti e pubblicherà le date per prodotto.", "source": "https://www.korg.com/uk/news/2026/0915/", "checked": "2026-11-03"}}},
-    {"id": "ni", "vendor": "Native Instruments", "keys": ["nativeinstruments"],
-     "os": {"27": {"state": "wait", "note": "Hardware e software non ancora supportati su macOS 27: NI consiglia di aspettare.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-11-03"}}},
-    {"id": "roland", "vendor": "Roland", "keys": ["roland", "rolandcloud", "boss"],
-     "os": {"27": {"state": "wait", "note": "Roland consiglia di restare su macOS Tahoe fino alla pubblicazione delle verifiche.", "source": "https://www.boss.info/global/support/support_news/25090811m1/", "checked": "2026-09-14"}}},
-    {"id": "softube-console", "vendor": "Softube", "keys": ["softube"], "products": ["console 1", "flow studio"],
-     "os": {"27": {"state": "issue", "note": "In Logic i parametri rispondono in ritardo. Softube sta preparando una correzione.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-11-03"}}},
-    {"id": "air", "vendor": "AIR Music Tech", "keys": ["airmusictech", "airmusictechnology"],
-     "os": {"27": {"state": "no", "note": "Il software AIR non è ancora supportato su macOS 27.", "source": "https://support.airmusictech.com/support/solutions/articles/69000883545-air-music-tech-macos-27-golden-gate-compatibility", "checked": "2026-09-17"}}},
-    {"id": "bfd", "vendor": "BFD", "keys": ["bfd", "bfddrums", "fxpansion"],
-     "os": {"27": {"state": "no", "note": "BFD e le espansioni non sono ancora supportati.", "source": "https://support.bfddrums.com/en/support/solutions/articles/69000883544-bfd-macos-27-golden-gate-compatibility", "checked": "2026-09-17"}}},
-    {"id": "toontrack", "vendor": "Toontrack", "keys": ["toontrack"],
-     "os": {"27": {"state": "wait", "note": "Test in corso: nessun problema trovato finora, ma non ancora qualificato.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-09-26"}}},
-    {"id": "spitfire", "vendor": "Spitfire Audio", "keys": ["spitfireaudio"],
-     "os": {"27": {"state": "wait", "note": "Non ancora testato.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-29"}}},
-    {"id": "ujam", "vendor": "UJAM", "keys": ["ujam"],
-     "os": {"27": {"state": "wait", "note": "Non ancora qualificato ufficialmente, ma nessun problema noto.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-09-26"}}},
-    {"id": "cherry", "vendor": "Cherry Audio", "keys": ["cherryaudio"],
-     "os": {"27": {"state": "wait", "note": "Test in corso: se il sistema è stabile, Cherry Audio consiglia di non aggiornare.", "source": "https://cherryaudio.kayako.com/article/724-should-i-update-to-macos-27-golden-gate", "checked": "2026-10-05"}}},
-    {"id": "bluecat", "vendor": "Blue Cat Audio", "keys": ["bluecataudio"],
-     "os": {"27": {"state": "wait", "note": "I test interni vanno bene, ma Blue Cat consiglia di non aggiornare a metà di un progetto.", "source": "https://www.bluecataudio.com/Blog/announcements/macos-27-golden-gate-compatibility/", "checked": "2026-10-29"}}},
-    {"id": "mixwave", "vendor": "MixWave", "keys": ["mixwave"],
-     "os": {"27": {"state": "wait", "note": "MixWave sconsiglia l'aggiornamento: test in corso.", "source": "https://support.mixwave.com/help/macos-27-golden-gate-compatibility", "checked": "2026-10-29"}}},
-    {"id": "ssl", "vendor": "Solid State Logic", "keys": ["solidstatelogic", "ssl"],
-     "os": {"27": {"state": "wait", "note": "SSL 360 e i controller UF/UC non sono ancora testati né supportati.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-05"}}},
-    {"id": "sonarworks", "vendor": "Sonarworks", "keys": ["sonarworks"],
-     "os": {"27": {"state": "wait", "note": "Non ancora supportato ufficialmente, anche se i primi test non mostrano problemi gravi.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-10-05"}}},
-    {"id": "antelope", "vendor": "Antelope Audio", "keys": ["antelopeaudio"],
-     "os": {"27": {"state": "wait", "note": "Test di software e interfacce in corso: Antelope consiglia di aspettare.", "source": "https://support.antelopeaudio.com/support/solutions/articles/42000067002-antelope-audio-os-compatibility-chart", "checked": "2026-11-03"}}},
-    {"id": "focusrite", "vendor": "Focusrite", "keys": ["focusrite"],
-     "os": {"27": {"state": "wait", "note": "Non ancora supportato ufficialmente: test in corso.", "source": "https://support.focusrite.com/hc/en-gb/articles/12033372452754-Focusrite-Compatibility-on-macOS", "checked": "2026-09-14"}}},
-    {"id": "moog", "vendor": "Moog", "keys": ["moog", "moogmusic"],
-     "os": {"27": {"state": "wait", "note": "Hardware e software non ancora supportati.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-09-17"}}},
-    {"id": "steinberg", "vendor": "Steinberg", "keys": ["steinberg"],
-     "os": {"27": {"state": "ok", "note": "Supportato. Steinberg indica la versione minima di ogni prodotto: ad esempio Groove Agent 6.0.30, HALion 7.5.0, Padshop 2.3.0, Retrologue 2.5.0, The Grand 3.3.20, Backbone 1.6.20.", "source": "https://helpcenter.steinberg.de/hc/en-us/articles/38919570456594", "checked": "2026-09-26"}}},
-    {"id": "fabfilter", "vendor": "FabFilter", "keys": ["fabfilter"],
-     "os": {"27": {"state": "unknown", "note": "Nessuna dichiarazione ufficiale.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-11-20"}}},
-    {"id": "pluginalliance", "vendor": "Plugin Alliance", "keys": ["pluginalliance", "brainworx"],
-     "os": {"27": {"state": "unknown", "note": "Nessuna dichiarazione ufficiale.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-11-20"}}},
-    {"id": "soundtoys", "vendor": "Soundtoys", "keys": ["soundtoys"],
-     "os": {"27": {"state": "unknown", "note": "Nessuna dichiarazione ufficiale.", "source": "https://www.production-expert.com/macos-audio-compatibility", "checked": "2026-11-20"}}}
+    {
+      "id": "celemony",
+      "vendor": "Celemony",
+      "keys": [
+        "celemony"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Celemony ha testato Melodyne su macOS 27 solo con Ableton Live 12.4 e Digital Performer 12.",
+          "source": "https://www.celemony.com/en/melodyne/editions-and-technical-matters",
+          "checked": "2026-11-20",
+          "per_app": [
+            {
+              "app": "^Logic Pro",
+              "state": "issue",
+              "note": "Logic su macOS 27 non è tra le configurazioni testate da Celemony. In Logic nativo su Apple Silicon l'ARA non è pienamente supportato: Celemony consiglia di aprire Logic con Rosetta."
+            }
+          ]
+        },
+        "26": [
+          {
+            "state": "ok",
+            "note": "Celemony ha testato Melodyne su Tahoe 26.7 con Pro Tools, Cubase, Nuendo, Studio Pro, Ableton Live, LUNA e Digital Performer.",
+            "source": "https://www.celemony.com/en/melodyne/editions-and-technical-matters",
+            "checked": "2026-11-20",
+            "per_app": [
+              {
+                "app": "^Logic Pro",
+                "state": "issue",
+                "note": "Con Logic su Apple Silicon Celemony ha testato solo Logic 11.2.2 aperto con Rosetta: in Logic nativo l'ARA non è pienamente supportato. Se Melodyne non si apre in Logic, prova ad aprire Logic con Rosetta (Finder → Logic Pro → Ottieni informazioni)."
+              }
+            ]
+          },
+          {
+            "state": "ok",
+            "from": "26.4",
+            "note": "Celemony ha testato Melodyne fino a Tahoe 26.7 con le altre DAW.",
+            "source": "https://www.celemony.com/en/melodyne/editions-and-technical-matters",
+            "checked": "2026-11-20",
+            "per_app": [
+              {
+                "app": "^Logic Pro",
+                "state": "issue",
+                "note": "Alcuni utenti segnalano che dalla 26.4 Melodyne non si carica più in Logic (non confermato da Celemony, che con Logic ha testato solo fino a macOS 26.1). Prima di aggiornare: aggiorna Melodyne all'ultima versione, tieni l'installer a portata e stampa in audio le tracce con Melodyne. Se dopo non si carica: reinstallalo o apri Logic con Rosetta."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "arturia",
+      "vendor": "Arturia",
+      "keys": [
+        "arturia"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Compatibilità validata per tutto il software e l'hardware.",
+          "source": "https://support.arturia.com/hc/en-us/articles/30213186440348-Compatibility-macOS-27-Golden-Gate",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "spectrasonics",
+      "vendor": "Spectrasonics",
+      "keys": [
+        "spectrasonics"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Omnisphere 3, Keyscape, Trilian e Stylus RMX sono supportati nelle ultime versioni.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "spectrasonics-omni2",
+      "vendor": "Spectrasonics",
+      "keys": [
+        "spectrasonics"
+      ],
+      "products": [
+        "omnisphere 2"
+      ],
+      "os": {
+        "27": {
+          "state": "no",
+          "note": "Omnisphere 2 è supportato solo fino a macOS 26 Tahoe.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "sonnox",
+      "vendor": "Sonnox",
+      "keys": [
+        "sonnox"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Le versioni G5 attuali sono compatibili.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "slate",
+      "vendor": "Slate Digital",
+      "keys": [
+        "slatedigital",
+        "eiosis"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Nessun problema trovato sui plugin Slate ed Eiosis. La validazione dei plugin SSL e Harrison è ancora in corso.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "eventide",
+      "vendor": "Eventide",
+      "keys": [
+        "eventide"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Tutti i plugin Eventide sono compatibili.",
+          "source": "https://www.eventideaudio.com/forums/topic/latest-os-compatibility-info/",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "newfangled",
+      "vendor": "Newfangled Audio",
+      "keys": [
+        "newfangledaudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Durante i test sono emersi problemi: aspetta la conferma.",
+          "source": "https://www.eventideaudio.com/forums/topic/latest-os-compatibility-info/",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "uhe",
+      "vendor": "u-he",
+      "keys": [
+        "uhe"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Le versioni attuali supportano Golden Gate.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "kazrog",
+      "vendor": "Kazrog",
+      "keys": [
+        "kazrog"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Tutta la gamma è testata. Aggiorna dal Plugin Manager.",
+          "source": "https://kazrog.com/blogs/news/macos-27-compatibility-statement",
+          "checked": "2026-09-16"
+        }
+      }
+    },
+    {
+      "id": "gforce",
+      "vendor": "GForce",
+      "keys": [
+        "gforce",
+        "gforcesoftware"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Nessun problema con le versioni attuali. Le versioni legacy possono non funzionare.",
+          "source": "https://www.gforcesoftware.com/help/technical-support/",
+          "checked": "2026-09-14"
+        }
+      }
+    },
+    {
+      "id": "2bplayed",
+      "vendor": "2B Played Music",
+      "keys": [
+        "2bplayedmusic",
+        "2bplayed"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Le versioni attuali sono supportate su Apple Silicon.",
+          "source": "https://2bplayed.com/support/",
+          "checked": "2026-09-16"
+        }
+      }
+    },
+    {
+      "id": "universalaudio",
+      "vendor": "Universal Audio",
+      "keys": [
+        "universalaudio",
+        "universalaudiouadx",
+        "uaudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "UA sta ancora testando macOS 27 e segnala piccoli problemi grafici nei plugin UAD Native.",
+          "source": "https://www.macobserver.com/?p=484819",
+          "checked": "2026-11-20"
+        }
+      }
+    },
+    {
+      "id": "izotope",
+      "vendor": "iZotope",
+      "keys": [
+        "izotope"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Non ancora supportato ufficialmente: valutazione in corso.",
+          "source": "https://support.izotope.com/hc/en-us/articles/49050744155021-macOS-27-Golden-Gate-Compatibility-Statement",
+          "checked": "2026-10-05"
+        }
+      }
+    },
+    {
+      "id": "korg",
+      "vendor": "KORG",
+      "keys": [
+        "korg"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "KORG sta testando tutti i prodotti e pubblicherà le date per prodotto.",
+          "source": "https://www.korg.com/uk/news/2026/0915/",
+          "checked": "2026-11-03"
+        }
+      }
+    },
+    {
+      "id": "ni",
+      "vendor": "Native Instruments",
+      "keys": [
+        "nativeinstruments"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Hardware e software non ancora supportati su macOS 27: NI consiglia di aspettare.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-11-03"
+        }
+      }
+    },
+    {
+      "id": "roland",
+      "vendor": "Roland",
+      "keys": [
+        "roland",
+        "rolandcloud",
+        "boss"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Roland consiglia di restare su macOS Tahoe fino alla pubblicazione delle verifiche.",
+          "source": "https://www.boss.info/global/support/support_news/25090811m1/",
+          "checked": "2026-09-14"
+        }
+      }
+    },
+    {
+      "id": "softube-console",
+      "vendor": "Softube",
+      "keys": [
+        "softube"
+      ],
+      "products": [
+        "console 1",
+        "flow studio"
+      ],
+      "os": {
+        "27": {
+          "state": "issue",
+          "note": "In Logic i parametri rispondono in ritardo. Softube sta preparando una correzione.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-11-03"
+        }
+      }
+    },
+    {
+      "id": "air",
+      "vendor": "AIR Music Tech",
+      "keys": [
+        "airmusictech",
+        "airmusictechnology"
+      ],
+      "os": {
+        "27": {
+          "state": "no",
+          "note": "Il software AIR non è ancora supportato su macOS 27.",
+          "source": "https://support.airmusictech.com/support/solutions/articles/69000883545-air-music-tech-macos-27-golden-gate-compatibility",
+          "checked": "2026-09-17"
+        }
+      }
+    },
+    {
+      "id": "bfd",
+      "vendor": "BFD",
+      "keys": [
+        "bfd",
+        "bfddrums",
+        "fxpansion"
+      ],
+      "os": {
+        "27": {
+          "state": "no",
+          "note": "BFD e le espansioni non sono ancora supportati.",
+          "source": "https://support.bfddrums.com/en/support/solutions/articles/69000883544-bfd-macos-27-golden-gate-compatibility",
+          "checked": "2026-09-17"
+        }
+      }
+    },
+    {
+      "id": "toontrack",
+      "vendor": "Toontrack",
+      "keys": [
+        "toontrack"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Test in corso: nessun problema trovato finora, ma non ancora qualificato.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "spitfire",
+      "vendor": "Spitfire Audio",
+      "keys": [
+        "spitfireaudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Non ancora testato.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "ujam",
+      "vendor": "UJAM",
+      "keys": [
+        "ujam"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Non ancora qualificato ufficialmente, ma nessun problema noto.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "cherry",
+      "vendor": "Cherry Audio",
+      "keys": [
+        "cherryaudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Test in corso: se il sistema è stabile, Cherry Audio consiglia di non aggiornare.",
+          "source": "https://cherryaudio.kayako.com/article/724-should-i-update-to-macos-27-golden-gate",
+          "checked": "2026-10-05"
+        }
+      }
+    },
+    {
+      "id": "bluecat",
+      "vendor": "Blue Cat Audio",
+      "keys": [
+        "bluecataudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "I test interni vanno bene, ma Blue Cat consiglia di non aggiornare a metà di un progetto.",
+          "source": "https://www.bluecataudio.com/Blog/announcements/macos-27-golden-gate-compatibility/",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "mixwave",
+      "vendor": "MixWave",
+      "keys": [
+        "mixwave"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "MixWave sconsiglia l'aggiornamento: test in corso.",
+          "source": "https://support.mixwave.com/help/macos-27-golden-gate-compatibility",
+          "checked": "2026-10-29"
+        }
+      }
+    },
+    {
+      "id": "ssl",
+      "vendor": "Solid State Logic",
+      "keys": [
+        "solidstatelogic",
+        "ssl"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "SSL 360 e i controller UF/UC non sono ancora testati né supportati.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-05"
+        }
+      }
+    },
+    {
+      "id": "sonarworks",
+      "vendor": "Sonarworks",
+      "keys": [
+        "sonarworks"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Non ancora supportato ufficialmente, anche se i primi test non mostrano problemi gravi.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-10-05"
+        }
+      }
+    },
+    {
+      "id": "antelope",
+      "vendor": "Antelope Audio",
+      "keys": [
+        "antelopeaudio"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Test di software e interfacce in corso: Antelope consiglia di aspettare.",
+          "source": "https://support.antelopeaudio.com/support/solutions/articles/42000067002-antelope-audio-os-compatibility-chart",
+          "checked": "2026-11-03"
+        }
+      }
+    },
+    {
+      "id": "focusrite",
+      "vendor": "Focusrite",
+      "keys": [
+        "focusrite"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Non ancora supportato ufficialmente: test in corso.",
+          "source": "https://support.focusrite.com/hc/en-gb/articles/12033372452754-Focusrite-Compatibility-on-macOS",
+          "checked": "2026-09-14"
+        }
+      }
+    },
+    {
+      "id": "moog",
+      "vendor": "Moog",
+      "keys": [
+        "moog",
+        "moogmusic"
+      ],
+      "os": {
+        "27": {
+          "state": "wait",
+          "note": "Hardware e software non ancora supportati.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-09-17"
+        }
+      }
+    },
+    {
+      "id": "steinberg",
+      "vendor": "Steinberg",
+      "keys": [
+        "steinberg"
+      ],
+      "os": {
+        "27": {
+          "state": "ok",
+          "note": "Supportato. Steinberg indica la versione minima di ogni prodotto: ad esempio Groove Agent 6.0.30, HALion 7.5.0, Padshop 2.3.0, Retrologue 2.5.0, The Grand 3.3.20, Backbone 1.6.20.",
+          "source": "https://helpcenter.steinberg.de/hc/en-us/articles/38919570456594",
+          "checked": "2026-09-26"
+        }
+      }
+    },
+    {
+      "id": "fabfilter",
+      "vendor": "FabFilter",
+      "keys": [
+        "fabfilter"
+      ],
+      "os": {
+        "27": {
+          "state": "unknown",
+          "note": "Nessuna dichiarazione ufficiale.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-11-20"
+        }
+      }
+    },
+    {
+      "id": "pluginalliance",
+      "vendor": "Plugin Alliance",
+      "keys": [
+        "pluginalliance",
+        "brainworx"
+      ],
+      "os": {
+        "27": {
+          "state": "unknown",
+          "note": "Nessuna dichiarazione ufficiale.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-11-20"
+        }
+      }
+    },
+    {
+      "id": "soundtoys",
+      "vendor": "Soundtoys",
+      "keys": [
+        "soundtoys"
+      ],
+      "os": {
+        "27": {
+          "state": "unknown",
+          "note": "Nessuna dichiarazione ufficiale.",
+          "source": "https://www.production-expert.com/macos-audio-compatibility",
+          "checked": "2026-11-20"
+        }
+      }
+    }
   ]
 }
